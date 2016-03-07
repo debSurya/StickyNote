@@ -1,0 +1,52 @@
+.popUp{
+    width: 30%;
+    height: 30%;
+    border: 2px solid black;
+}
+
+#popUpContainer{
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px #888888;
+    transform: rotate(2deg);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.deleteButton{
+    float: left;
+    border-radius: 8px;
+    box-shadow: 4px 4px 1px #888888;
+}
+
+.closeButton{
+    float: right;
+    border-radius: 8px;
+     box-shadow: 4px 4px 1px #888888;
+}
+
+.editorText{
+    width: 80%;
+    height: 75%;
+    background-color: cyan;
+}
+
+.clear{
+    clear: both;
+}
+
+body{
+    background-color: lightcyan;
+}
+
+textarea{
+    border-radius: 10px;
+}
+
+.noteButtons{
+    border-radius: 8px;
+    box-shadow: 4px 4px 1px #888888;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}

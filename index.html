@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="css/stickyNote.css">
+        <script src="js/app.js"></script>
+        <script src="js/functionalities/draggable.js"></script>
+        <script src="js/controllers/noteController.js"></script>
+        <script src="js/directives/editorDirective.js"></script>
+        <script src="js/services/buttonVisibilityService.js"></script>
+        <script src="js/services/openNote.js"></script>
+        <script src="js/services/deleteNote.js"></script>
+        <script src="js/services/dataStorage.js"></script>
+        <script src="js/services/saveNote.js"></script>
+    </head>
+    
+    <body class="container" ng-app="stickyNoteApp" ng-controller="noteController">
+        <div class="row"><br><br>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="text-align: center">
+                <button class="noteButtons" ng-show="!popupDisabledState" ng-disabled="buttonDisabledState.data" ng-click="showNote()">CREATE NOTE !</button>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="text-align: center">
+                <button class="noteButtons" ng-show="!popupDisabledState" ng-disabled="!buttonDisabledState.data" ng-click="showNote()">OPEN NOTE !</button>
+            </div>
+        </div>
+        <br>
+        <div class="row" style="text-align: center">
+            <editor-directive class="draggableDirective" ng-show="popupDisabledState"></editor-directive>
+        </div>
+    </body>
+</html>
